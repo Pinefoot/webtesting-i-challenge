@@ -8,11 +8,11 @@ describe('enhancer', ()=>{
         it('repairs the item to durability of 100', ()=>{
             let item = {
                 name: "Tree Branch",
-                durability: 17,
+                durability: 12,
                 enhancement: 9000
             }
-            console.log(repair(item))
-            expect(repair(item)).toBe(100);
+            //console.log(repair(item))
+            expect(repair(item).durability).toBe(100);
             
         })
     })
